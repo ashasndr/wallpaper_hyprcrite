@@ -4,10 +4,11 @@ a tool that periodically changes wallpaper on hyprland via hyprpaper.
 someone probably already made something like this, but i felt like doing one myself for the thrill of it.
 named it this way because o'clock is such a whimsical little word.
 
-usage: `hyprpaperoclock.sh [--dir PATH_TO_WALLPAPERS] [--monitor NAME] [--conf PATH] [--interval SECONDS]`
-example:
+### usage: 
+`hyprpaperoclock.sh [--dir PATH_TO_WALLPAPERS] [--monitor NAME] [--conf PATH] [--interval SECONDS]`
+### example:
 `hyprpaperoclock.sh --dir ~/Pictures/my_cute_waifu_wallpapers --monitor eDP-1 --interval 7200`
-Defaults:
+### Defaults:
 ```
 WPDIR="$HOME/Pictures/hyppaperoclock"
 HYPRPAPER_CONF="$HOME/.config/hypr/hyprpaper.conf"
