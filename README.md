@@ -19,5 +19,5 @@ INTERVAL=3600
 name your files like this: 
 ![config example with multiple images named number1-number2.ext](./illust.png "config example with multiple images")
 
-please note that rn this script is in a fairly early stage so there isn't necessarily all imaginable cases in terms of error checking and all that.
+please note that rn this script is in a fairly early stage so there aren't necessarily all imaginable cases in terms of error checking and all that.
 if you don't do anything silly in your config it should work.
