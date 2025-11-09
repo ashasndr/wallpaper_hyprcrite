@@ -10,7 +10,7 @@ someone probably already made something like this, but i felt like doing one mys
 `wphyprcrite.sh --dir ~/Pictures/my_cute_waifu_wallpapers --monitor eDP-1 --interval 600`
 ### Defaults:
 ```
-wpdir="$HOME/Pictures/hyprpaperoclock"
+wpdir="$HOME/Pictures/wallpaper_hyprcrite"
 monitor="eDP-1"
 interval=3600
 ```
