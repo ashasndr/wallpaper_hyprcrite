@@ -10,10 +10,10 @@ set -euo pipefail
 
 ##########################
 ###### defaults consts
-WPDIR="$HOME/Pictures/hyppaperoclock"
+WPDIR="$HOME/Pictures/hyprpaperoclock"
 HYPRPAPER_CONF="$HOME/.config/hypr/hyprpaper.conf"
 MONITOR="eDP-1"
-INTERVAL=3600r
+INTERVAL=3600
 
 ###############################
 ###### argument parsing
@@ -96,7 +96,7 @@ set_wallpaper() {
     echo "wallpaper = $MONITOR,$WALL" >> "$HYPRPAPER_CONF"
 
     if pgrep -x hyprpaper >/dev/null; then
-        pkill -USR1 hyprpaper
+        pkill -SIGUSR1 hyprpaper
 	sleep 1
 	hyprpaper &
 	sleep 1

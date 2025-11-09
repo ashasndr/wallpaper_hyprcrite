@@ -10,7 +10,7 @@ named it this way because o'clock is such a whimsical little word.
 `hyprpaperoclock.sh --dir ~/Pictures/my_cute_waifu_wallpapers --monitor eDP-1 --interval 7200`
 ### Defaults:
 ```
-WPDIR="$HOME/Pictures/hyppaperoclock"
+WPDIR="$HOME/Pictures/hyprpaperoclock"
 HYPRPAPER_CONF="$HOME/.config/hypr/hyprpaper.conf"
 MONITOR="eDP-1"
 INTERVAL=3600
