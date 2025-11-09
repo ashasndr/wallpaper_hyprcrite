@@ -1,6 +1,7 @@
 # wallpaper hyprcrite
 
-a tool that periodically changes wallpaper on hyprland via hyprpaper. to add to exec_once in your hyprland.conf
+a tool that periodically changes wallpaper on hyprland via hyprpaper. to add to exec_once in your hyprland.conf.
+
 someone probably already made something like this, but i felt like doing one myself for the thrill of it.
 
 ### usage:
