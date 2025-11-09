@@ -24,6 +24,7 @@ SUPPORTED_EXTS=("png" "jpg" "jpeg" "webp")
 wpdir="$HOME/Pictures/wallpaper_hyprcrite"
 monitor="eDP-1"
 interval=1600
+last_wp=""
 
 ###############################
 ###### argument parsing
@@ -148,6 +149,9 @@ set_wallpaper() {
 
 while true; do
     wall=$(choose_wallpaper)
-    set_wallpaper "$wall"
+    if [ "$last_wp" != "$wall" ]; then
+        set_wallpaper "$wall"
+    fi
+    last_wp=$wall
     sleep "$interval"
 done
