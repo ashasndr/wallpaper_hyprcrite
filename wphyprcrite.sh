@@ -22,7 +22,7 @@ set -euo pipefail
 #
 SUPPORTED_EXTS=("png" "jpg" "jpeg" "webp")
 wpdir="$HOME/Pictures/wallpaper_hyprcrite"
-monitor="eDP-1"
+monitor=" "
 interval=1600
 last_wp=""
 
@@ -42,7 +42,7 @@ while [[ $# -gt 0 ]]; do
             display_help
             exit 0;;
         *)
-            echo "unknown arg $1. check --help if you're lost." >&2; exit 1;;
+            echo "Unknown arg $1. Check --help if you're lost." >&2; exit 1;;
     esac
 done
 
@@ -52,14 +52,16 @@ done
 
 display_help() {
     cat <<EOF
-    usage: $0 [--dir PATH_TO_WALLPAPERS] [--monitor NAME] [--interval SECONDS]
-    example:
+    Usage: $0 [--dir PATH_TO_WALLPAPERS] [--monitor NAME] [--interval SECONDS]
+    Example:
     $0 --dir ~/Pictures/my_cute_waifu_wallpapers --monitor eDP-1 --interval 600
 
-    to configure times, just name the files accordingly, in the right dir. 1012-1843.png will display that wp from 10:12am to 18:43.
-    default dir is ~/Pictures/wallpaper_hyprcrite
+    To configure times, just name the files like this:
+    1012-1843.png will display that wallpaper from 10:12am to 18:43.
+    The default dir is ~/Pictures/wallpaper_hyprcrite
+    if a given time is unspecified by any files, the wallpaper will be changed to the default.jpg|png|webp image
 
-    tip, to display monitors and their names, use hyprctl monitors
+    Tip: to display monitors and their names, use hyprctl monitors.
 EOF
 }
 
